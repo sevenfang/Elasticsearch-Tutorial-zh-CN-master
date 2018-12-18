@@ -1,0 +1,47 @@
+//PUT /shop_index
+{
+  "settings": {
+    "refresh_interval": "5s",
+    "number_of_shards": 5,
+    "number_of_replicas": 1
+  },
+  "mappings": {
+    "shop": {
+      "properties": {
+        "id": {
+          "type": "text",
+          "index": "not_analyzed"
+        },
+        "shop_name": {
+          "type": "text",
+          "store": "no",
+          "term_vector": "with_positions_offsets",
+          "analyzer": "ik_max_word",
+          "search_analyzer": "ik_max_word",
+          "boost": 5
+        },
+        "pin": {
+          "properties": {
+            "location": {
+              "type": "geo_point"
+            }
+          }
+        },
+        "created_date_time": {
+          "type": "date",
+          "index": "not_analyzed",
+          "format": "basic_date_time"
+        },
+        "last_modified_date_time": {
+          "type": "date",
+          "index": "not_analyzed",
+          "format": "basic_date_time"
+        },
+        "version": {
+          "type": "long",
+          "index": "no"
+        }
+      }
+    }
+  }
+}

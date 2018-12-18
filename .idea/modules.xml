@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/elasticsearch-base/elasticsearch-base.iml" filepath="$PROJECT_DIR$/elasticsearch-base/elasticsearch-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/elasticsearch-gis/elasticsearch-gis.iml" filepath="$PROJECT_DIR$/elasticsearch-gis/elasticsearch-gis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/elasticsearch-parent.iml" filepath="$PROJECT_DIR$/elasticsearch-parent.iml" />
+    </modules>
+  </component>
+</project>
